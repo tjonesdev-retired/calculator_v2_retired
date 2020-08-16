@@ -1,0 +1,125 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  cursor: default;
+  user-select: none;
+}
+
+#calcBody {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 305px;
+  margin: auto;
+  height: 455px;
+  background-color: DarkOrange;
+}
+
+#calcScreen {
+  width: 305px;
+  height: 140px;
+  padding: 15px 8px;
+  margin-bottom: -12px;
+}
+
+#maths {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  height: 30px;
+  font-size: 20px;
+  color: #ffd589; /* Lightest Orange */
+}
+
+#screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  font-size: 70px;
+  padding: 0 5px;
+  color: white;
+  
+}
+
+#calcBtns {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 305px;
+  height: 315px;
+}
+
+button {
+  height: 65px;
+  width: 75px;
+  font-size: 25px;
+  border: none;
+  cursor: default;
+  margin: -2px;
+}
+
+#percent {
+  font-size: 20px;
+  height: 65px;
+  padding-top: 6px;
+}
+
+.orangeSm {
+  color: white;
+  background-color: DarkOrange;
+}
+
+.orangeSm:hover {
+  background-color: #ffd589; /* Lightest Orange */
+}
+
+.whiteSm:hover {
+  background-color: whitesmoke;
+}
+
+.orangeSm:focus, .whiteSm:focus {
+  outline: 0;
+}
+
+.whiteSm {
+  color: DarkOrange;
+  background-color: white;
+}
+
+.grey {
+  color: gainsboro;
+  background-color: whitesmoke;
+}
+
+.grey:hover {
+  background-color: gainsboro;
+  color: whitesmoke;
+}
+
+.orange {
+  background-color: #ffb630; /* Medium Orange */
+  color: white;
+}
+
+.orange:hover, .darkorange:hover {
+  background-color: #ffbf4c; /* Light Orange */
+}
+
+.darkorange {
+  background-color: orange;
+  color: white;
+}
+
+.num {
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 769px) {
+  #calcBody, #calcScreen, #calcBtns {
+    width: 500px;
+  }
+}
